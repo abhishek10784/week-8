@@ -1,0 +1,22 @@
+#include <stdio.h>
+void printArray(int arr[], int size) {
+int i;
+for (i = 0; i < size; i++)
+printf("%d ", arr[i]);
+printf("\n");
+}
+int findMax(int arr[], int size) {
+int i, max = arr[0];
+for (i = 1; i < size; i++)
+if (arr[i] > max) max = arr[i];
+return max; }
+
+int main() {
+int a[] = {5, 3, 8, 1, 9, 2};
+int n = 6;
+printf("25331A05H2");
+printf("\nArray elements: ");
+printArray(a, n);
+printf("Maximum = %d\n", findMax(a, n));
+return 0;
+}
